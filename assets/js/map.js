@@ -1,9 +1,9 @@
 function initMap() {
-        
+
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 40.674, lng: -73.945},
+          center: {lat: -27.4729668, lng: 153.0708838},
           scrollwheel: false,
-          zoom: 12,
+          zoom: 14,
           styles: [
             {
             elementType: 'geometry',
@@ -108,5 +108,3 @@ function initMap() {
         //   title: 'You are here'
         // });
 }
-
-
