@@ -235,6 +235,7 @@ Author URI: http://theshahriyar.com
 		-webkit-transition: all 0.2s ease-in-out;
 
 		.feature-post-content {
+			height: 200px;
 			background: #ffffff;
 			padding: 0 30px 60px;
 			border-top: 1px solid #ececec;
@@ -270,6 +271,7 @@ Author URI: http://theshahriyar.com
 			}
 
 			h2 {
+				height: 32px;
 				color: #222222;
 				font-size: 15px;
 				font-weight: 700;
@@ -1714,3 +1716,5 @@ button.mfp-arrow {
 	    color: #ffffff;
     }
 }
+
+
