@@ -1,3 +1,47 @@
+.feature-box .feature-post .feature-post-content {
+  height: 200px;
+}
+.feature-box .feature-post .feature-post-content h2 {
+  height: 32px;
+  margin: 0 0 7px 0;
+}
+.feature-box .feature-post .feature-post-content p {
+  line-height: 1.6;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+.close-modal {
+  position: fixed;
+  z-index: 9999;
+  color: #333;
+  right: 6px;
+  top: 5px;
+  font-size: 30px;
+  line-height: 0.9;
+}
+
+@media (max-width: 1345px) and (min-width: 1145px) {
+  .feature-box .feature-post {
+    padding-bottom: 390px;
+  }
+}
+
+@media (max-width: 1145px) and (min-width: 910px) {
+  .feature-box .feature-post .hover-feature span {
+    margin: 0 0 10px;
+  }
+  .feature-box .feature-post .hover-feature h1 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .feature-box .feature-post .hover-feature p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+}
+
 @media (max-width: 1024px) {
   .tp-leftarrow, .tp-rightarrow {
     width: 40px !important;
@@ -11,7 +55,22 @@
 
   .tparrows:before {
     line-height: 25px !important; } }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .othelo-tab .tab-pane {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 9999;
+    padding: 30px !important;
+    overflow-y: auto;
+  }
+  .othelo-tab .tab-pane.active {
+    display: block;
+  }
+
   .parallax {
     background-attachment: inherit; }
 

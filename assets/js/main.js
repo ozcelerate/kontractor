@@ -4,6 +4,34 @@
     //when dom is ready
     $(document).ready(function() {
 
+        if ($(window).width() < 769) {
+            $('.othelo-tab .active').removeClass('active');
+        }
+
+        $(window).resize(function(){
+            if ($(window).width() < 769) {
+                $('.othelo-tab .active').removeClass('active');
+            }
+        });
+
+        $('.othelo-tab a[role="tab"]').on('click', function(){
+            var tadId = $(this).attr('href');
+
+            $('.othelo-tab .active').removeClass('active');
+            $('.othelo-tab '+tadId).addClass('active');
+            $('html').addClass('no-scroll');
+            $('body').append('<a href="" class="close-modal fa fa-times"></a>');
+
+        });
+
+        $('body').on('click', '.close-modal', function(e){
+            e.preventDefault();
+
+            $('html').removeClass('no-scroll');
+            $('.othelo-tab .active').removeClass('active');
+            $(this).remove();
+        });
+
 
         $('a.page-scroll').bind('click', function(event) {
             var $anchor = $(this);
