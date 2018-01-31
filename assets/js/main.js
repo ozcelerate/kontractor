@@ -15,12 +15,15 @@
         });
 
         $('.othelo-tab a[role="tab"]').on('click', function(){
-            var tadId = $(this).attr('href');
 
-            $('.othelo-tab .active').removeClass('active');
-            $('.othelo-tab '+tadId).addClass('active');
-            $('html').addClass('no-scroll');
-            $('body').append('<a href="" class="close-modal fa fa-times"></a>');
+            if ($(window).width() < 769) {
+                var tadId = $(this).attr('href');
+
+                $('.othelo-tab .active').removeClass('active');
+                $('.othelo-tab '+tadId).addClass('active');
+                $('html').addClass('no-scroll');
+                $('body').append('<a href="" class="close-modal fa fa-times"></a>');
+            }
 
         });
 
