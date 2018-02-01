@@ -235,7 +235,7 @@ Author URI: http://theshahriyar.com
 		-webkit-transition: all 0.2s ease-in-out;
 
 		.feature-post-content {
-			height: 200px;
+			/*height: 200px;*/
 			background: #ffffff;
 			padding: 0 30px 60px;
 			border-top: 1px solid #ececec;
@@ -271,7 +271,7 @@ Author URI: http://theshahriyar.com
 			}
 
 			h2 {
-				height: 32px;
+				/*height: 32px;*/
 				color: #222222;
 				font-size: 15px;
 				font-weight: 700;
@@ -1057,7 +1057,6 @@ button.mfp-arrow {
 		    text-align: center;
 		    opacity: 0;
 		    background-color: rgba(33, 40, 45, .66);
-		    -webkit-transition: all 0.3s;
 		    transition: all 0.3s;
 		}
 	}
@@ -1069,31 +1068,39 @@ button.mfp-arrow {
 	    width: 100%;
 	    padding: 20px;
 	    opacity: 0;
-	    -webkit-transition: all .3s;
 	    transition: all .3s;
 	    text-align: center;
+		transform: translateY(0%);
 	    .team-name {
-	    	font-size: 16px;
+	    	font-size: 32px;
 	    	display: block;
-	    	margin: 5px auto;
+	    	margin: 0 auto 20px auto;
 	    	text-align: center;
 	    	text-transform: uppercase;
+		    //transition: transform .3s ease .1s;
+		    transform: translateY(0%);
 	    }
 	    .team-designation {
-	    	font-size: 15px;
+	    	font-size: 24px;
 	    	margin: auto;
 	    	padding: 10px 0 0;
 	    	text-align: center;
 	    	text-transform: uppercase;
+		    //transition: transform .4s ease .3s;
+		    transform: translateY(0%);
 	    }
+		.btn-wrap {
+			margin: 60px auto 0 auto;
+			transition: transform .4s ease 0s;
+			transform: translateY(0%);
+		}
 	}
 	.icon {
 		position: absolute;
-		bottom: 10%;
+		bottom: 50%;
 		left: 0;
 		width: 100%;
 		padding: 10px 20px;
-		-webkit-transition: transform .3s ease 0s;
 		transition: transform .3s ease 0s;
 		transform: scale(0);
 		text-align: center;
@@ -1111,25 +1118,31 @@ button.mfp-arrow {
 			width: 35px;
 			height: 35px;
 			margin: 0 5px;
-			-webkit-transition: all .3s;
 			transition: all .3s;
 			color: $white;
 		}
 	}
-	&:hover {
+	&:hover, &:focus {
 		.team-member-img {
 			&:after {
 				opacity: 1;
 			}
 		}
 		.team-info {
-			bottom: 50%;
+			transform: translateY(-35%);
 			color: $white;
 			opacity: 1;
+			.team-name {
+				//transform: translateY(-10px);
+			}
+			.team-designation {
+				//transform: translateY(-20px);
+			}
+			.btn-wrap {
+				transform: translateY(-30px);
+			}
 		}
 		.icon {
-			-webkit-transform: scale(1);
-			transform: scale(1);
 			opacity: 1;
 		}
 	}
