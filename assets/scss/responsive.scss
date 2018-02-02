@@ -70,6 +70,12 @@
 	.tparrows:before {
 		line-height: 25px !important; } }
 @media (max-width: 768px) {
+	.team-member-3:hover .team-info, .team-member-3:focus .team-info {
+		transform: translateY(-10%);
+	}
+	.modal-dialog {
+		margin: 60px 5px 10px 5px;
+	}
 	.othelo-tab .tab-pane {
 		position: fixed;
 		left: 0;

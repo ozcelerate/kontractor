@@ -1082,6 +1082,7 @@ button.mfp-arrow {
 	    	text-transform: uppercase;
 		    //transition: transform .3s ease .1s;
 		    transform: translateY(0%);
+		    line-height: 1.2;
 	    }
 	    .team-designation {
 	    	font-size: 22px;
@@ -1132,7 +1133,7 @@ button.mfp-arrow {
 			}
 		}
 		.team-info {
-			transform: translateY(-30%);
+			transform: translateY(-25%);
 			color: $white;
 			opacity: 1;
 			.team-name {
